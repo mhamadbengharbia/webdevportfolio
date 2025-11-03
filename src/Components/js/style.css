@@ -366,6 +366,20 @@ align-items: center;
 .diplome h1{
   letter-spacing: 1.2px;
 }
+
+
+.diplome h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #721c24;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+
 .diplome P {
   color: #c5474d;
   letter-spacing: 1.2px;
@@ -417,6 +431,23 @@ align-items: center;
   letter-spacing: 1.2px;
  color: #f6f6f6;
  }
+
+
+.brand h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #721c24;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+
+
+
+
 .brand1{
 display: flex;
 gap:32px;
@@ -1143,3 +1174,195 @@ flex-direction: column;
     }
     .diplome h1{text-align: center;}
   }
+
+
+
+/* === Main Projects Section === */
+.pro {
+  background: #181818;
+  padding: 80px 10%;
+   text-align: center;
+  box-sizing: border-box;
+}
+
+.pro h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #F6F6F6;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.pro h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #721c24;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.pro .pfe {
+  color: #F6F6F6;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+/* === Projects Grid === */
+.firstproject {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Each project card */
+.firstproject > div {
+  flex: 1 1 30%;
+  min-width: 300px;
+  max-width: 420px;
+  background: #f6f6f6;
+  border-radius: 16px;
+  padding: 30px 35px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.firstproject > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.firstproject h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.firstproject h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #721c24;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* Paragraph text */
+.firstproject p {
+  font-size: 0.96rem;
+  color: #475569;
+  line-height: 1.75;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Subtle gradient hover accent */
+.firstproject > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(59, 130, 246, 0.15),
+    rgba(59, 130, 246, 0)
+  );
+  transform: skewX(-25deg);
+  transition: 0.6s;
+}
+
+.firstproject > div:hover::before {
+  left: 125%;
+}
+
+/* === Responsive Breakpoints === */
+
+/* Large tablets / small laptops */
+@media (max-width: 1024px) {
+  .pro {
+    padding: 70px 6%;
+  }
+
+  .firstproject {
+    gap: 30px;
+  }
+
+  .firstproject > div {
+    flex: 1 1 45%;
+  }
+}
+
+/* Tablets & large phones */
+@media (max-width: 768px) {
+  .pro {
+    padding: 60px 5%;
+  }
+
+  .pro h1 {
+    font-size: 1.8rem;
+  }
+
+  .pro .pfe {
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+  }
+
+  .firstproject {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstproject > div {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .firstproject h3 {
+    font-size: 1.1rem;
+  }
+
+  .firstproject p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .pro {
+    padding: 50px 4%;
+  }
+
+  .pro h1 {
+    font-size: 1.6rem;
+  }
+
+  .firstproject > div {
+    padding: 25px 20px;
+  }
+
+  .firstproject h3 {
+    font-size: 1rem;
+  }
+
+  .firstproject p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+}
