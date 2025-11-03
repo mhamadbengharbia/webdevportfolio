@@ -239,8 +239,7 @@ letter-spacing: 1.2px;
   text-decoration: none;
   color: #f6f6f6;
    letter-spacing: 1.2px;
-   font-family:  ;
-   }
+    }
 .dnbtn:hover {
    color: #c5474d;
   border-color: #c5474d;
@@ -1165,6 +1164,20 @@ label,.Contact button ,.Contact p,.Skills p ,.dipcontenu h3{
   .animation > div > div {
     padding: 1.1rem 0.85rem;
     }
+
+.herosection,.firstproject{
+  font-family: 'Montserrat', sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
 
 
   }
