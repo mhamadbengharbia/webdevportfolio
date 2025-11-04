@@ -1,4 +1,8 @@
-
+/* @font-face {
+  font-family: 'Borisna';
+  src: url('/public/Borisna.ttf') format('truetype');
+ 
+ } */
  
 
 body{
@@ -43,5 +47,9 @@ html {
   right: -12px;
   
  }
+ body{
  
+    font-family: 'Montserrat', sans-serif !important;
+ 
+}
 }
