@@ -1165,7 +1165,7 @@ label,.Contact button ,.Contact p,.Skills p ,.dipcontenu h3{
     padding: 1.1rem 0.85rem;
     }
 
-.herosection,.firstproject h3,.content,.firstproject p{
+.herosection,.firstproject,.content{
     font-family: 'Montserrat', sans-serif !important;
 
 
@@ -1176,6 +1176,8 @@ label,.Contact button ,.Contact p,.Skills p ,.dipcontenu h3{
   @media screen and (max-width: 380px) {
     .heror1{
 flex-direction: column;
+    font-family: 'Montserrat', sans-serif !important;
+
     }
     .diplome h1{text-align: center;}
  
