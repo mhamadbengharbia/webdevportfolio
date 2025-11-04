@@ -1165,7 +1165,7 @@ label,.Contact button ,.Contact p,.Skills p ,.dipcontenu h3{
     padding: 1.1rem 0.85rem;
     }
 
-body{
+.herosection,.firstproject,.content{
   font-family:  Arial, Helvetica, sans-serif;
 
 
@@ -1186,6 +1186,13 @@ body{
 flex-direction: column;
     }
     .diplome h1{text-align: center;}
+.herosection,.firstproject,.content{
+  font-family:  Arial, Helvetica, sans-serif;
+
+
+
+}
+
   }
 
 
