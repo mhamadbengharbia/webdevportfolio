@@ -123,14 +123,14 @@ import Pfe from "./Components/js/Pfe.js";
         <Skills />
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         initial={animationSettings.initial}
         whileInView={animationSettings.whileInView}
         transition={animationSettings.transition}
         viewport={animationSettings.viewport}
       >
         <Contact />
-      </motion.div>
+      </motion.div> */}
       
 
 
